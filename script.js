@@ -8,7 +8,7 @@ function updateClockAndDate() {
     const day = now.getDate().toString().padStart(2, '0');
     const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Months are 0-based
     const year = now.getFullYear();
-    const dateString = `${day}.${month}.${year}`;
+    const dateString = `${day}.${month}.${year}.`;
 
     document.getElementById('clock').textContent = timeString;
     document.getElementById('date').textContent = dateString;
